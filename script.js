@@ -2,10 +2,12 @@
 var timer = 60;
 var score = 0;
 var newHit;
+// To get the new Random hit
 function getNewHit() {
   newHit = Math.floor(Math.random() * 20);
   document.querySelector('#hit').textContent = newHit;
 }
+// To create the bubbles or circle in the main box
 function makeBubble() {
   var clutter = '';
 
@@ -16,6 +18,7 @@ function makeBubble() {
 
   document.querySelector('.bubble-box').innerHTML = clutter;
 }
+// To add time limit in the game of 60 sec
 function timeLimit() {
   var timerint = setInterval(function () {
     if (timer > 0) {
@@ -29,10 +32,12 @@ function timeLimit() {
     }
   }, 1000);
 }
+// This function increases score:
 function increaseScore() {
   score += 10;
   document.querySelector('#score').textContent = score;
 }
+// To access and check whether the selected answer is correct or not
 document
   .querySelector('.bubble-box')
   .addEventListener('click', function (dets) {
