@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'Roboto';
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.main {
+  background-color: rgb(192, 245, 192);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-box {
+  width: 80%;
+  height: 80%;
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.score-box {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(67, 133, 67);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.score-box h2 {
+  padding: 0 12px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffff;
+}
+.score-box h2 span {
+  background-color: aliceblue;
+  padding: 0 10px;
+  color: black;
+}
+.bubble {
+  background-color: green;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+.bubble:hover {
+  background-color: rgb(111, 165, 29);
+  cursor: pointer;
+}
+.bubble-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  height: calc(100% - 80px);
+  padding: 3px;
+}
