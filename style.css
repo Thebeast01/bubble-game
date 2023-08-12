@@ -44,6 +44,24 @@ body {
   padding: 0 10px;
   color: black;
 }
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#game-over {
+  color: red;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+}
+#final-score {
+  color: rgb(6, 150, 25);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
 .bubble {
   background-color: green;
   border-radius: 50%;

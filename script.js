@@ -1,5 +1,5 @@
 'use strict';
-var timer = 60;
+var timer = 30;
 var score = 0;
 var newHit;
 // To get the new Random hit
@@ -28,7 +28,7 @@ function timeLimit() {
       clearInterval(timerint);
       document.querySelector(
         '.bubble-box'
-      ).innerHTML = `<h1>Game Over </h1> <h3> `;
+      ).innerHTML = ` <div class= "message" > <h1 id="game-over">Game Over </h1> <h3 h3 id= "final-score">Your Final Score is : ${score}</h3></div> `;
     }
   }, 1000);
 }
